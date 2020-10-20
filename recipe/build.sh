@@ -54,7 +54,7 @@ python ./configure \
   --with-clib-autodetect=0 \
   --with-cxxlib-autodetect=0 \
   --with-fortranlib-autodetect=0 \
-  --with-debugging=0 \
+  --with-debugging=1 \
   --with-blas-lib=libblas${SHLIB_EXT} \
   --with-lapack-lib=liblapack${SHLIB_EXT} \
   --with-hdf5=1 \
