@@ -25,7 +25,7 @@ jobs:
 
   steps:
   # TODO: Fast finish on azure pipelines?
-  - publish: $(System.DefaultWorkingDirectory)
+  - upload: /Users/runner/miniforge3/conda-bld/osx-64/*.tar.bz2
     artifact: TarBall
   - script: |
       export CI=azure
