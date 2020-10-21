@@ -36,6 +36,5 @@ jobs:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
       FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
-  - upload:
-    - *.tar.bz2
+  - upload: **/petsc-*.tar.bz2
     artifact: TarBall
