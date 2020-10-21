@@ -10,10 +10,10 @@ jobs:
     matrix:
       osx_64_hdf51.10.6=mpi_mpimpich:
         CONFIG: osx_64_hdf51.10.6=mpi_mpimpich
-        UPLOAD_PACKAGES: 'False'
+        UPLOAD_PACKAGES: 'True'
       osx_64_hdf51.10.6mpimpich:
         CONFIG: osx_64_hdf51.10.6mpimpich
-        UPLOAD_PACKAGES: 'False'
+        UPLOAD_PACKAGES: 'True'
     maxParallel: 8
   timeoutInMinutes: 360
 
