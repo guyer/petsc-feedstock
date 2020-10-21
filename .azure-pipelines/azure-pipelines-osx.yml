@@ -44,5 +44,5 @@ jobs:
   - script: ls ${HOME}/miniforge3
   - script: ls ${HOME}/miniforge3/conda-bld
   - script: ls ${HOME}/miniforge3/conda-bld/osx-64
-  - upload: ${HOME}/miniforge3/conda-bld/osx-64/petsc-*.tar.bz2
+  - upload: ${HOME}/miniforge3/conda-bld/osx-64
     artifact: TarBall
