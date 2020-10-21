@@ -26,7 +26,7 @@ jobs:
   steps:
   # TODO: Fast finish on azure pipelines?
   - upload: /Users/runner/work/1/s/.git
-    artifact: TarBall-$(System.JobName)-$(System.PhaseName)
+    artifact: TarBall-$(System.JobDisplayName)-$(System.PhaseDisplayName)
   - script: |
       export CI=azure
       export OSX_FORCE_SDK_DOWNLOAD="1"
