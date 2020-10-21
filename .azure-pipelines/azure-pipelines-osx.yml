@@ -25,8 +25,6 @@ jobs:
 
   steps:
   # TODO: Fast finish on azure pipelines?
-  - upload: /Users/runner/work/1/s/.git
-    artifact: TarBall-$(System.JobDisplayName)-$(System.PhaseDisplayName)
   - script: |
       export CI=azure
       export OSX_FORCE_SDK_DOWNLOAD="1"
@@ -40,4 +38,4 @@ jobs:
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
   - script: ls ${HOME}/miniforge3/conda-bld/osx-64
   - upload: /Users/runner/miniforge3/conda-bld/osx-64
-    artifact: TarBall-$(System.JobName)-$(System.PhaseName)
+    artifact: TarBall-$(System.JobDisplayName)
