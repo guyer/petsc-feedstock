@@ -2,6 +2,9 @@
 # update the conda-forge.yml and/or the recipe/meta.yaml.
 # -*- mode: yaml -*-
 
+variables:
+- system.debug: true
+
 jobs:
 - job: osx
   pool:
