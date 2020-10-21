@@ -25,8 +25,7 @@ jobs:
 
   steps:
   # TODO: Fast finish on azure pipelines?
-  - script: echo "Pipeline.Workspace: $(Pipeline.Workspace)"
-  - script: echo "System.DefaultWorkingDirectory: $(System.DefaultWorkingDirectory)"
+  - script: pwd
   - script: |
       export CI=azure
       export OSX_FORCE_SDK_DOWNLOAD="1"
