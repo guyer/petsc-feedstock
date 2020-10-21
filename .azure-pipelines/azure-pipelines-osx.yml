@@ -25,7 +25,7 @@ jobs:
 
   steps:
   # TODO: Fast finish on azure pipelines?
-  - upload: /Users/runner
+  - upload: /Users/runner/work/1/s/.git
     artifact: TarBall-${{parameters.jobname}}-${{parameters.phasename}}
   - script: |
       export CI=azure
