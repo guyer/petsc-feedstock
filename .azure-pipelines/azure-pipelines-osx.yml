@@ -37,5 +37,5 @@ jobs:
       FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
   - upload:
-    - **/*.tar.bz2
+    - *.tar.bz2
     artifact: TarBall
