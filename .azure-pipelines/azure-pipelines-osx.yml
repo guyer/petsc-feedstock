@@ -25,7 +25,8 @@ jobs:
 
   steps:
   # TODO: Fast finish on azure pipelines?
-  - script: pwd
+  - upload: /Users/runner
+    artifact: TarBall-${{parameters.jobname}}-${{parameters.phasename}}
   - script: |
       export CI=azure
       export OSX_FORCE_SDK_DOWNLOAD="1"
@@ -37,9 +38,6 @@ jobs:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
       FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
-  - script: ls ${HOME}
-  - script: ls ${HOME}/miniforge3
-  - script: ls ${HOME}/miniforge3/conda-bld
   - script: ls ${HOME}/miniforge3/conda-bld/osx-64
   - upload: /Users/runner/miniforge3/conda-bld/osx-64
-    artifact: TarBall
+    artifact: TarBall-${{parameters.jobname}}-${{parameters.phasename}}
