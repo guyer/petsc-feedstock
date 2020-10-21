@@ -40,4 +40,4 @@ jobs:
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
   - script: ls ${HOME}/miniforge3/conda-bld/osx-64
   - upload: /Users/runner/miniforge3/conda-bld/osx-64
-    artifact: TarBall-${{parameters.jobname}}-${{parameters.phasename}}
+    artifact: TarBall-$(System.JobName)-$(System.PhaseName)
